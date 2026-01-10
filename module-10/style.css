@@ -1,0 +1,78 @@
+.continer{
+    border: 2px solid red;
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.box{
+    border: 2px dotted green;
+    width: 100px;
+    height: 100px;
+}
+
+.login-main{
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+    align-items: center;
+    height: 90vh;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+.login input{
+    margin-top: 10px;
+}
+
+.login1{
+    display:grid;
+    row-gap: 10px;
+    
+}
+
+.calender{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: rgb(215, 228, 238);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.day, .date {
+    background-color: aqua;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+height: 40px;
+width: 40px;
+}
+.date{
+    background-color: blueviolet;
+}
+
+.food{
+    border: 2px solid rebeccapurple;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.food image{
+    width: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+@media screen and (max-width:576px){
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+} {
+    
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+    }
+
+    header {
+      background: #0f172a;
+      padding: 20px 60px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 60px;
+      background: linear-gradient(to right, #3b82f6, #2563eb);
+      color: white;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .hero-text button {
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      background: #facc15;
+      color: black;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .hero img {
+      width: 350px;
+    }
+
+    .features {
+      padding: 60px;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .feature-box {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .products {
+  padding: 60px;
+  background: #f1f5f9;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: white;
+  width: 280px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 15px 0 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.product-card span {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-card button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero img {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MyProduct</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Build Your Business Faster</h2>
+      <p>
+        Simple, powerful and modern solution to grow your online presence.
+        Start today and boost your productivity.
+      </p>
+      <button>Get Started</button>
+    </div>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="hero">
+  </section>
+
+  <section class="features">
+    <h2>Our Features</h2>
+
+    <div class="feature-box">
+      <div class="card">
+        <h3>Fast</h3>
+        <p>Optimized performance for better speed and experience.</p>
+      </div>
+
+      <div class="card">
+        <h3>Secure</h3>
+        <p>Top level security to keep your data safe.</p>
+      </div>
+
+      <div class="card">
+        <h3>Responsive</h3>
+        <p>Works perfectly on mobile, tablet and desktop.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="products">
+  <h2>Our Products</h2>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="image/WhatsApp Image 2026-01-13 at 1.02.49 PM.jpeg" alt="Product 1">
+      <h3>আজয়া খেজুর</h3>
+      <p>High quality product with modern design.</p>
+      <span>Taka:49</span>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="image/WhatsApp Image 2026-01-13 at 1.02.49 PM.jpeg" alt="Product 2">
+      <h3>Product Two</h3>
+      <p>Perfect solution for daily use.</p>
+      <span>$79</span>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="image/WhatsApp Image 2026-01-13 at 1.02.49 PM.jpeg" alt="Product 3">
+      <h3>Product Three</h3>
+      <p>Premium features and smooth performance.</p>
+      <span>$99</span>
+      <button>Buy Now</button>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <p>© 2026 MyProduct. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
